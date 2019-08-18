@@ -43,23 +43,23 @@
           imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
           desc: '一日游',
         }, {
-          id: '0002',
+          id: '0006',
           imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
           desc: '古北水镇',
         }, {
-          id: '0006',
+          id: '0007',
           imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
           desc: '动植物园',
         }, {
-          id: '0007',
+          id: '0008',
           imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
           desc: '奥林匹克塔',
         }, {
-          id: '0008',
+          id: '0009',
           imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
           desc: '北京世园会',
         }, {
-          id: '0009',
+          id: '0010',
           imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
           desc: '文慧券',
         },
@@ -89,6 +89,9 @@
     .icons >>> .swiper-container
         height 0
         padding-bottom 50%
+
+    .icons
+        margin-top .1rem
 
         .icon
             position relative
