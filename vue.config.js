@@ -7,6 +7,15 @@
 
 
 module.exports = {
+  configureWebpack: {
+    resolve: {
+      alias: {
+        'assets': '@/assets',
+      },
+    },
+  },
+
+
   devServer: {
     port: 3000,
   },
