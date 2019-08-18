@@ -1,5 +1,7 @@
 <template>
-    <div>Home</div>
+    <div>
+        <div class="home">Hello World</div>
+    </div>
 </template>
 
 <script>
@@ -8,6 +10,5 @@
   };
 </script>
 
-<style scoped>
-
+<style scoped lang="stylus">
 </style>

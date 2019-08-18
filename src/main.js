@@ -3,8 +3,11 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import 'normalize.css';
+import './assets/css/border.css';
+import fastClick from 'fastclick';
 
 Vue.config.productionTip = false;
+fastClick.attach(document.body);
 
 new Vue({
   router,
