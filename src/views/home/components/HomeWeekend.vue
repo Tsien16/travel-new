@@ -4,7 +4,7 @@
             周末去哪儿
         </div>
         <ul>
-            <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+            <li class="item border-bottom" v-for="item in weekendList" :key="item.id">
                 <div class="item-img-wrapper">
                     <img class="item-img" :src="item.imgUrl" alt="图片">
                 </div>
@@ -20,28 +20,8 @@
 <script>
   export default {
     name: 'HomeWeekend',
-    data() {
-      return {
-        recommendList: [{
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-          title: '京城周末撒欢',
-          desc: '在帝都过周末，不仅仅是城中游！',
-        },
-          {
-            id: '0002',
-            imgUrl: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-            title: '京城周末撒欢',
-            desc: '在帝都过周末，不仅仅是城中游！',
-          },
-          {
-            id: '0003',
-            imgUrl: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-            title: '京城周末撒欢',
-            desc: '在帝都过周末，不仅仅是城中游！',
-          },
-        ],
-      };
+    props: {
+      weekendList: Array,
     },
   };
 </script>
@@ -50,7 +30,6 @@
     @import "~assets/mixins.styl"
 
     .title
-        margin-top 0.2rem
         line-height .8rem
         background #eee
         text-indent .2rem

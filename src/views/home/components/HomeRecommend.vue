@@ -19,28 +19,8 @@
 <script>
   export default {
     name: 'HomeRecommend',
-    data() {
-      return {
-        recommendList: [{
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg',
-          title: '北京欢乐谷',
-          desc: '亚洲唯一飞行式过山车等你来挑战',
-        },
-          {
-            id: '0002',
-            imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg',
-            title: '北京欢乐谷',
-            desc: '亚洲唯一飞行式过山车等你来挑战',
-          },
-          {
-            id: '0003',
-            imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg',
-            title: '北京欢乐谷',
-            desc: '亚洲唯一飞行式过山车等你来挑战',
-          },
-        ],
-      };
+    props: {
+      recommendList: Array,
     },
   };
 </script>
