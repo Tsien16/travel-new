@@ -4,20 +4,8 @@
             <div class="area">
                 <div class="title border-topbottom">当前城市</div>
                 <div class="button-list">
-                    <div class="button-wrapper">
-                        <div class="button">北京</div>
-                    </div>
-                    <div class="button-wrapper">
-                        <div class="button">北京</div>
-                    </div>
-                    <div class="button-wrapper">
-                        <div class="button">北京</div>
-                    </div>
-                    <div class="button-wrapper">
-                        <div class="button">北京</div>
-                    </div>
-                    <div class="button-wrapper">
-                        <div class="button">北京</div>
+                    <div class="button-wrapper" v-for="hotCity in hotCities" :key="hotCity.id">
+                        <div class="button">{{hotCity.name}}</div>
                     </div>
                 </div>
             </div>
