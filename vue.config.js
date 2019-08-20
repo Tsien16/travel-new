@@ -8,7 +8,7 @@
 
 module.exports = {
 
-  publicPath: '/travel',
+  publicPath: './',
 
   configureWebpack: {
     performance: {
@@ -20,9 +20,6 @@ module.exports = {
       },
     },
   },
-
-
-
 
 
   devServer: {
