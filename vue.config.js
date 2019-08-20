@@ -7,13 +7,22 @@
 
 
 module.exports = {
+
+  publicPath: '/travel',
+
   configureWebpack: {
+    performance: {
+      hints: false,
+    },
     resolve: {
       alias: {
         'assets': '@/assets',
       },
     },
   },
+
+
+
 
 
   devServer: {
