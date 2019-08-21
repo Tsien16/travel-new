@@ -18,11 +18,12 @@
 </template>
 
 <script>
+  import {mapState} from 'vuex';
+
   export default {
     name: 'HomeHeader',
-    props: {
-      city: String,
-      swiperList: [],
+    computed: {
+      ...mapState(['city']),
     },
   };
 </script>
@@ -56,7 +57,8 @@
             color #ccc
 
         .header-right
-            width 1.24rem
+            padding 0 .1rem
+            min-width 1.04rem
             float right
             text-align center
             color #ffffff
