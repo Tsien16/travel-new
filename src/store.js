@@ -13,7 +13,6 @@ try {
 
 export default new Vuex.Store({
   state: {
-
     city: defaultCity,
   },
   mutations: {
