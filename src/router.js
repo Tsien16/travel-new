@@ -20,5 +20,10 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "list" */ './views/city/City.vue'),
     },
+    {
+      path: '/detail/:id',
+      name: 'detail',
+      component: () => import('./views/detail/Detail.vue'),
+    },
   ],
 });
